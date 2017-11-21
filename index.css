@@ -1,0 +1,1004 @@
+
+body
+{
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+li
+{
+    margin-bottom: 10px;
+}
+
+a
+{
+    color: #000;
+}
+
+h2,
+.fornews,
+span
+{
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #0054b9;
+}
+
+/* h3
+{
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+    color: #00E;
+} */
+
+ul
+{
+    padding: 0;
+    list-style: none;
+}
+
+a:hover
+{
+    color: #c00;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.place
+{
+    grid-area: place;
+}
+
+.settings
+{
+    grid-area: settings;
+}
+
+.mail
+{
+    grid-area: mail;
+}
+
+.leftside
+{
+    grid-area: leftside;
+}
+
+.news
+{
+    grid-area: news;
+}
+
+.adv1
+{
+    grid-area: adv1;
+}
+
+/* .main-nav
+{
+    grid-area: links;
+} */
+/* 
+.search 
+{ 
+    grid-area: search; 
+} */
+
+.adv2
+{
+    grid-area: adv2;
+}
+
+.visited
+{
+    grid-area: visited;
+}
+
+.humor
+{
+    grid-area: humor;
+}
+
+.tv
+{
+    grid-area: tv;
+}
+
+.nav-search-slogan
+{
+    grid-area: nav-search-slogan;
+}
+
+.autonews
+{
+    grid-area: autonews;
+}
+
+.weather
+{
+    grid-area: weather;
+}
+
+.jam
+{
+    grid-area: jam;
+}
+
+.map
+{
+    grid-area: map;
+}
+
+.transport
+{
+    grid-area: transport;
+}
+
+.afisha
+{
+    grid-area: afisha;
+}
+
+.rightside
+{
+    grid-area: rightside;
+}
+
+.main-footer
+{
+    grid-area: footer;
+}
+
+.wrapper
+{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'place'
+        'settings'
+        'mail'
+        'leftside'
+        'news'
+        'adv1'
+        'adv2'
+        /* 'search'
+        'links' */
+        'visited'
+        'humor'
+        'tv'
+        'autonews'
+        'weather'
+        'jam'
+        'map'
+        'transport'
+        'afisha'
+        'rightside'
+        'nav-search-slogan'
+        'footer';
+}
+
+/* @media (min-width: 500px)
+{
+    .wrapper 
+    {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+            'header  header'
+            'nav     nav'
+            'sidebar content'
+            'ad      footer';
+    }
+
+    nav ul
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+} */
+
+@media (min-width: 700px)
+{
+    .wrapper
+    {
+        display: grid;
+        grid-template-columns: 15% 20% 20% 20% 15%;
+        grid-template-areas: 'place    settings settings     settings mail'
+            'leftside news             news                adv1     rightside'
+            'leftside nav-search-slogan nav-search-slogan   \
+            nav-search-slogan rightside'
+            'leftside adv2               adv2                \
+            adv2              rightside'
+            'leftside leftcontent        centercontent       \
+            rightcontent      rightside'
+            'footer   footer             footer              \
+            footer            footer';
+    }
+}
+
+/* .place стили */
+
+.place div
+{
+    display: inline-block;
+    color: #999;
+}
+
+.locationtext
+{
+    font-size: 14px;
+}
+
+.locationbadge
+{
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    background: url('location.svg');
+}
+
+/* .nav .search стили */
+
+.nav-search-slogan .main-nav a
+{
+    margin-right: 20px;
+}
+
+.main-nav
+{
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.main-nav a
+{
+    font-size: 15px;
+    font-weight: normal;
+    color: #0054b9;
+}
+
+.slogan
+{
+    margin-top: 8px;
+    width: 596px;
+    margin-right: 20px;
+}
+
+.slogantext a
+{
+    color: #999;
+}
+
+.slogan div
+{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.promo
+{
+    margin-left: 140px;
+}
+
+.promo a
+{
+    font-size: 13px;
+    color: #000;
+}
+
+.promo a:hover
+{
+    color: #c00;
+}
+
+input
+{
+    height: 36px;
+    width: 81%;
+    border-style: solid;
+    border-color: #ffdb4d;
+}
+
+.searchfield
+{
+    display: flex;
+}
+
+.searchfield button
+{
+    background-color: #ffdb4d;
+    border: none;
+    width: 79px;
+}
+
+.searchtriangle
+{
+    width: 0;
+    height: 0;
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    
+    border-left: 13px solid #ffdb4d;
+}
+
+/* .adv2 стили */
+
+.adv2 img
+{
+    width: 728px;
+    border: 1px solid #000;
+}
+
+/* .services стили */
+
+.visiteditems ul li
+{
+    font-size: 13px;
+}
+
+.visiteditems ul li div
+{
+    display: inline-block;
+}
+
+.servicetype
+{
+    font-weight: bold;
+}
+
+/* traffik jam стили */
+
+.jam
+{
+    margin-bottom: 50px;
+}
+
+.jamtype div
+{
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rightcontent .jam .jamdescription
+{
+    font-size: 13px;
+    color: #000;
+}
+
+/* .tv стили */
+
+.time,
+.description,
+.channel
+{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+.time
+{
+    width: 43px;
+}
+
+.description
+{
+    width: 135px;
+}
+
+.channel
+{
+    color: #999;
+}
+
+/* .map стили */
+
+.locationlogo
+{
+    width: 16px;
+    height: 16px;
+    background: url('compassicon.svg');
+}
+
+.regionname,
+.ownlocation
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ownlocation
+{
+    margin-left: 30px;
+    display: none;
+}
+
+.travelling
+{
+    margin-bottom: 50px;
+}
+
+.travelling:hover .ownlocation
+{
+    display: inline-block;
+}
+
+.transport
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.taxi,
+.rasp
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.map
+{
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.taxi
+{
+    margin-right: 13px;
+    margin-bottom: 10px;
+}
+
+.rasp,
+.bus
+{
+    margin-bottom: 10px;
+}
+
+/* .afisha стили */
+
+.afisha .description
+{
+    color: #999;
+}
+
+.afisha div
+{
+    font-size: 13px;
+}
+
+.promoname,
+.promodescription
+{
+    font-weight: bold;
+}
+
+.name,
+.description,
+.promoname,
+.promodescription
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.description,
+.promodescription
+{
+    width: 120px;
+}
+
+.name,
+.promoname
+{
+    width: 93px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.promoname
+{
+    width: 65px;
+}
+
+/* .weather стили */
+
+.currentimage
+{
+    background: url('cloud.svg');
+    width: 16px;
+    height: 16px;
+}
+
+.currentimage,
+.currenttext,
+.weatherblock
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.forecast
+{
+    font-size: 13px;
+}
+
+.weather
+{
+    margin-bottom: 36px;
+}
+
+.weather:hover .forecastnow,
+.settingweather
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.trafficlight
+{
+    background: url('traffic-lights.svg');
+    height: 16px;
+    width: 16px;
+}
+
+.settingweather
+{
+    background: url('settings.svg');
+    width: 16px;
+    height: 16px;
+    margin-left: 40px;
+}
+
+.image
+{
+    display: none;
+
+    /* padding: 10px; */
+    /* box-shadow: 0 0 10px #ff1493;
+    border-radius: 5px 20px;  */
+    position: absolute;
+    /* margin: auto; */
+}
+
+.image img
+{
+    /* width: inherit;
+    height: inherit; */
+    z-index: 1;
+}
+
+.image .close
+{
+    display: none;
+    position: absolute;
+    right: 12px;
+    top: 15px;
+}
+
+.image .close a
+{
+    padding: 5px;
+    color: #999;
+    text-decoration: none;
+    /* border-radius: 5px 8px; */
+}
+
+/* .image .close a:hover
+{
+    box-shadow: 0 0 2px #ff1493;
+} */
+
+.image .open
+{
+    /* width: 50%; */
+    height: 50%;
+    width: 300px;
+    /* position: absolute; */
+    /* top: 0; */
+    z-index: 2;
+    /* left: 0; */
+}
+
+div[class='image']:target
+{
+    display: block;
+    width: 502px;
+    height: 201px;
+    /* top: 50%; */
+    z-index: 4;
+    /* left: 50%; */
+}
+
+div[class='image']:target + .overlay
+{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .3;
+    position: fixed;
+    z-index: 3;
+}
+
+div[class='image']:target .close
+{
+    display: block;
+    z-index: 4;
+}
+
+div[class='image']:target .open
+{
+    display: none;
+}
+
+/* .autonews стили */
+
+.autonews
+{
+    height: 250px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.autonews .content::before
+{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    content: '';
+    height: 30px;
+    background: linear-gradient(to bottom, 
+    rgba(255,255,255, 1) 20%,
+    rgba(255,255,255, 0) 80%);
+}
+
+.autonews .content::after
+{
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    content: '';
+    height: 30px;
+    background: linear-gradient(to top, 
+    rgba(255,255,255, 1) 20%,
+    rgba(255,255,255, 0) 80%);
+}
+
+.autonews .content::-webkit-scrollbar
+{
+    width: 0;
+}
+
+.autonews .content
+{
+    /* height: 30px; */
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    height: 100%;
+}
+
+/* .stocks стили */
+
+.more
+{
+    background: url('more.svg');
+    width: 16px;
+    height: 16px;
+}
+
+.stocks div
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.stocks .stocksdescription
+{
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.stocks .delta
+{
+    margin-left: 7px;
+    color: #999;
+}
+
+.usd,
+.euro,
+.blackgold
+{
+    margin-right: 18px;
+}
+
+/* news стили */
+
+input[value='leftright']:checked ~ .wrapper .news .newsheader .newsekb
+{
+    display: none;
+}
+
+input[value='leftright']:checked ~ .wrapper .news .newsheader .newssmi
+{
+    display: block;
+}
+
+input[value='rightleft']:checked ~ .wrapper .news .newsheader .newssmi
+{
+    display: none;
+}
+
+input[value='rightleft']:checked ~ .wrapper .news .newsheader .newsekb
+{
+    display: block;
+}
+
+input[type='radio']
+{
+    display: none;
+}
+
+.newsekb,
+.datetime,
+.newssmi
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* .logo стили */
+
+.logo
+{
+    background: url('logo.svg');
+    width: 140px;
+    height: 100px;
+    margin-top: 215px;
+    /* margin-left: 8px; */
+}
+
+/* .humor стили */
+
+.fifth,
+.fourth,
+.third,
+.second,
+.first
+{
+    display: none;
+}
+
+.humor
+{
+    margin-top: 50px;
+}
+
+.loadingicon,
+.loadingtext
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 100px;
+}
+
+input[id='1to2']:checked ~ .first
+{
+    display: none;
+}
+
+input[id='1to2']:checked ~ .second
+{
+    display: block;
+}
+
+input[id='2to3']:checked ~ .second
+{
+    display: none;
+}
+
+input[id='2to3']:checked ~ .third
+{
+    display: block;
+}
+
+input[id='3to4']:checked ~ .third
+{
+    display: none;
+}
+
+input[id='3to4']:checked ~ .fourth
+{
+    display: block;
+}
+
+input[id='4to5']:checked ~ .fourth
+{
+    display: none;
+}
+
+input[id='4to5']:checked ~ .fifth
+{
+    display: block;
+}
+
+input[id='5to1']:checked ~ .fifth
+{
+    display: none;
+}
+
+input[id='5to1']:checked ~ .first
+{
+    display: block;
+}
+
+.loadingicon
+{
+    display: inline-block;
+    vertical-align: top;
+    background: url('loading.svg');
+    width: 16px;
+    height: 16px;
+}
+
+.loadingtext
+{
+    display: inline-block;
+    vertical-align: top;
+    color: #0054b9;
+}
+
+.contenthumor
+{
+    height: 120px;
+}
+
+/* .mail стили */
+
+.login::first-letter
+{
+    color: #f00;
+}
+
+.login,
+.lettercount
+{
+    font-weight: bold;
+}
+
+.lettercount
+{
+    display: inline-block;
+}
+
+.mailfield
+{
+    /* grid-area: mail; */
+    border: 1px solid black;
+}
+
+/* settingwindow */
+
+.settingwindow
+{
+    position: absolute;
+    height: 200px;
+    width: 150px;
+    background: #fff;
+    top: 30px;
+    border: 1px solid #f00;
+    display: none;
+}
+
+.settingwindow label
+{
+    display: block;
+}
+
+input[type='checkbox']
+{
+    display: none;
+}
+
+input[id='settings']:checked ~ .wrapper .settings .settingwindow
+{
+    display: block;
+}
+
+.visited,
+.humor,
+.tv,
+.autonews,
+.weather,
+.jam,
+.travelling,
+.afisha
+{
+    display: none;
+}
+
+input[id='visited']:checked ~ .wrapper .visited,
+input[id='humor']:checked ~ .wrapper .humor,
+input[id='tv']:checked ~ .wrapper .tv,
+input[id='autonews']:checked ~ .wrapper .autonews,
+input[id='weather']:checked ~ .wrapper .weather,
+input[id='jam']:checked ~ .wrapper .jam,
+input[id='map']:checked ~ .wrapper .travelling,
+input[id='afisha']:checked ~ .wrapper .afisha
+{
+    display: block;
+}
+
+input[id='visited']:checked ~ .wrapper label[for='visited']::before,
+input[id='humor']:checked ~ .wrapper label[for='humor']::before,
+input[id='tv']:checked ~ .wrapper label[for='tv']::before,
+input[id='autonews']:checked ~ .wrapper label[for='autonews']::before,
+input[id='weather']:checked ~ .wrapper label[for='weather']::before,
+input[id='jam']:checked ~ .wrapper label[for='jam']::before,
+input[id='map']:checked ~ .wrapper label[for='map']::before,
+input[id='afisha']:checked ~ .wrapper label[for='afisha']::before
+{
+    content: '';
+    background: url('chbmark.svg');
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+input[id='visited'] ~ .wrapper label[for='visited']::before,
+input[id='humor'] ~ .wrapper label[for='humor']::before,
+input[id='tv'] ~ .wrapper label[for='tv']::before,
+input[id='autonews'] ~ .wrapper label[for='autonews']::before,
+input[id='weather'] ~ .wrapper label[for='weather']::before,
+input[id='jam'] ~ .wrapper label[for='jam']::before,
+input[id='map'] ~ .wrapper label[for='map']::before,
+input[id='afisha'] ~ .wrapper label[for='afisha']::before
+{
+    content: '';
+    background: url('chbempty.svg');
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.rightcontent,
+.leftcontent,
+.centercontent
+{
+    display: none;
+}
+
+input[id='visited']:checked ~ .wrapper .leftcontent,
+input[id='humor']:checked ~ .wrapper .leftcontent
+{
+    display: inline-block;
+}
+
+input[id='tv']:checked ~ .wrapper .centercontent,
+input[id='autonews']:checked ~ .wrapper .centercontent
+{
+    display: inline-block;
+}
+
+input[id='weather']:checked ~ .wrapper .rightcontent,
+input[id='jam']:checked ~ .wrapper .rightcontent,
+input[id='map']:checked ~ .wrapper .rightcontent,
+input[id='afisha']:checked ~ .wrapper .rightcontent
+{
+    display: inline-block;
+}
+
+.settings label
+{
+    cursor: pointer;
+}

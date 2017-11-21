@@ -3,7 +3,646 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input type="checkbox" name="settingslabel" id="visited" checked>
+    <input type="checkbox" name="settingslabel" id="humor" checked>
+    <input type="checkbox" name="settingslabel" id="tv" checked>
+    <input type="checkbox" name="settingslabel" id="autonews" checked>
+    <input type="checkbox" name="settingslabel" id="weather" checked>
+    <input type="checkbox" name="settingslabel" id="jam" checked>
+    <input type="checkbox" name="settingslabel" id="map" checked>
+    <input type="checkbox" name="settingslabel" id="afisha" checked>
+    <input type="checkbox" name="settings" id="settings">
+    <input type="radio" name="arrows" id="rightarrow1" value="leftright">
+    <input type="radio" name="arrows" id="leftarrow2" value="rightleft" checked>
+    <div class="wrapper">
+        <div class="place">
+            <a href="https://yandex.ru/maps/54/yekaterinburg/">
+                <div class="locationbadge"></div><!-- 
+                 --><div class="locationtext">Екатеринбург</div>
+            </a>
+        </div>        
+        <div class="settings">
+            <div class="settingwindow">
+                <label for="visited">Посещаемое</label>
+                <label for="humor">Анекдоты</label>
+                <label for="tv">Телепрограмма</label>
+                <label for="autonews">АвтоНовости</label>
+                <label for="weather">Погода</label>
+                <label for="jam">Пробки</label>
+                <label for="map">Екарта</label>
+                <label for="afisha">Афиша</label>
+            </div>
+            <label for="settings">
+                Настройка
+            </label>
+        </div>
+        <div class="mailfield">
+            <div class="login">login</div>
+            <div class="mail">
+                Почта
+                <span class="lettercount">138</span>
+            </div>
+        </div>
+        <div class="leftside">
+            <div class="logo"></div>    
+        </div>
+        <div class="news">
+            <div class="newsheader">
+                <div class="newssmi">
+                    <label for="leftarrow2"><span class="fornews">Сейчас в СМИ</span></label>
+                    <ul>
+                        <li><a href="http://bit.ly/2zUOjCa">Дмитрий Медведев купил себе новый iPhone</a></li>
+                        <li><a href="https://support.apple.com/">Ошибка в iOS препятствует смене
+                            летнего времени на зимнее</a></li>
+                        <li><a href="http://bit.ly/1hJZ9t">Дмитрий Медведев отменил зимнее время</a></li>
+                        <li><a href="https://ura.news/news/1052237246">Пермь признана городом с самым
+                            высоким уровнем жизни для голубей</a></li>
+                        <li><a href="http://bit.ly/2mKjjSz">Дагестанские ученые открыли дверь</a></li>
+                    </ul>
+                </div>
+                <div class="newsekb">
+                    <label for="rightarrow1"><span class="fornews">в Екатеринбурге</span></label>
+                    <ul>
+                        <li>
+                            <a href="http://bit.ly/2mKShuh">
+                                В Екатеринбурге на площади 1905 года могут перенести остановки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2zUGEpW">
+                                Свердловские эсеры получили нового руководителя — депутата и банкрота
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2j9t4ol">
+                                Свердловская область получит 16 миллиардов на ремонт дорог
+                            </a>    
+                        </li>    
+                        <li>
+                            <a href="http://bit.ly/2hHdPmi">
+                                Рабочую ситуацию вокруг ремонта проспекта Ленина «раздули до слона»
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2B9NAgL">
+                                На Среднем Урале утилизируют меньше половины образующихся отходов
+                            </a>    
+                        </li>    
+                    </ul>
+                </div>
+                <div class="datetime">
+                    21 ноября, вторник 02:49
+                </div>
+            </div>
+            <div class="stocks">
+                <div class="usd" title="курс ЦБ РФ на 21/11">
+                    <div class="stocksdescription">
+                        USD ЦБ
+                    </div>
+                    <div class="value">
+                        59,27
+                    </div>
+                </div>
+                <div class="euro" title="курс ЦБ РФ на 21/11">
+                    <div class="stocksdescription">
+                        EUR ЦБ
+                    </div>
+                    <div class="value">
+                        69,67
+                    </div>
+                </div>
+                <div class="blackgold" title="цена на 20/11 23:21">
+                    <div class="stocksdescription">
+                        НЕФТЬ
+                    </div>
+                    <div class="value">
+                        62,12
+                    </div>
+                    <div class="delta">
+                        -0,99%
+                    </div>    
+                </div>
+            </div>
+        </div>  
+        <div class="adv1">
+            <a href="https://amigo.mail.ru/">
+                <img src="adv1.jpg" alt="Невыгодное предложение">
+            </a>
+        </div>
+        <div class="nav-search-slogan">
+            <div class="main-nav">
+                <a href="https://yandex.ru/video/">Видео</a>
+                <a href="https://yandex.ru/images/">Картинки</a>
+                <a href="https://news.yandex.ru/">Новости</a>
+                <a href="https://yandex.ru/maps">Карты</a>
+                <a href="https://market.yandex.ru/">Маркет</a>
+                <a href="https://translate.yandex.ru/">Переводчик</a>
+                <a href="https://music.yandex.ru/">Музыка</a>
+                <a href="">ещё</a>
+            </div>
+            <div class="search">
+                <div class="searchfield">
+                    <input type="text">
+                    <button type="submit">Найти</button>
+                    <div class="searchtriangle"></div>
+                </div>   
+            </div>
+            <div class="slogan">
+                <div class="slogantext">
+                    Найдётся всё. Например, <a href="http://bit.ly/2zPllWx">Яндекс.Браузер</a></div>
+                <div class="promo">
+                    <a href="http://bit.ly/2ASRpGa"><img src="yabrowser.jpg" 
+                        alt="Попробуйте Яндекс.Браузер"></a>
+                    <a href="http://bit.ly/2j8kLsP">Попробуйте Яндекс.Браузер</a>
+                </div>                        
+            </div>
+        </div>    
+        <div class="adv2">
+            <a href="https://www.renault.ru/">
+                <img src="adv2.jpg" alt="Выгодное предложение 
+                в Renault Service для а/м молодого парка. Узнайте подробности на сайте. ">
+            </a>    
+        </div>
+        <div class="leftcontent">
+            <div class="visited">
+                <a href="https://yandex.ru/all">
+                    <span>Посещаемое</span>
+                </a>    
+                <div class="visiteditems">
+                    <ul>
+                        <li>
+                            <div class="servicetype">
+                                <a href="https://yandex.ru/collections/channel/retsepty/">
+                                    Коллекции
+                                </a>
+                            </div>
+                            &nbsp;&mdash;&nbsp;
+                            <div class="servicedescription">
+                                <a href="https://yandex.ru/collections/channel/retsepty/">
+                                    как там твоя диета
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="servicetype">
+                                <a href="yandex.ru">
+                                    Маркет
+                                </a>    
+                            </div>
+                            &nbsp;&mdash;&nbsp;
+                            <div class="servicedescription" 
+                            title="Сможет ли iPhone X распознать юридическое лицо?">
+                                <a href="yandex.ru">
+                                    продажа iPhone
+                                </a>    
+                            </div>
+                        </li>
+                        <li>
+                            <div class="servicetype">
+                                <a href="yandex.ru">
+                                    Здоровье
+                                </a>
+                            </div>
+                            &nbsp;&mdash;&nbsp;
+                            <div class="servicedescription"
+                            title="iPhone X: значение внутренних органов человека слишком переоценено">
+                                <a href="yandex.ru">
+                                    цена почки
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="servicetype">
+                                <a href="http://bit.ly/2zTxqYD">
+                                    Работа
+                                </a>
+                            </div>
+                            &nbsp;&mdash;&nbsp;
+                            <div class="servicedescription">
+                                <a href="http://bit.ly/2zTxqYD">
+                                    властелином мира
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="servicetype">
+                                <a href="http://bit.ly/2yWT9O1">
+                                    Авиабилеты
+                                </a>
+                            </div>
+                            &nbsp;&mdash;&nbsp;
+                            <div class="servicedescription">
+                                <a href="http://bit.ly/2yWT9O1">
+                                    на море
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="servicetype">
+                                <a href="http://bit.ly/2AdfXgG">
+                                    Видео
+                                </a>
+                            </div>
+                            &nbsp;&mdash;&nbsp;
+                            <div class="servicedescription">
+                                <a href="http://bit.ly/2AdfXgG">
+                                    с морскими котиками
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="servicetype">
+                                <a href="https://music.yandex.ru/mix/activity">
+                                    Музыка
+                                </a>
+                            </div>
+                            &nbsp;&mdash;&nbsp;
+                            <div class="servicedescription">
+                                <a href="https://music.yandex.ru/mix/activity">
+                                    игра на нервах родителей
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="humor">
+                <a href="http://bit.ly/2A0F2ZC">
+                    <span>Лучшие анекдоты</span>
+                </a>    
+                <input type="radio" name="humor" id="1to2">
+                <input type="radio" name="humor" id="2to3" checked>
+                <input type="radio" name="humor" id="3to4">
+                <input type="radio" name="humor" id="4to5">
+                <input type="radio" name="humor" id="5to1">
+                <div class="first">
+                    <div class="contenthumor">
+                        <ul>
+                            <li>
+                                Хорошо, что Вы забыли зачетку, ведь сегодня она бы Вам не понадобилась (с)
+                            </li>
+                        </ul>        
+                    </div>    
+                    <label for="1to2">
+                        <span>
+                            <span class="loadingicon"></span>
+                            <span class="loadingtext">Показать ещё</span>
+                        </span>    
+                    </label>
+                </div>
+                <div class="second">
+                    <div class="contenthumor">
+                        <ul>
+                            <li>
+                                В армии:
+                            </li>
+                            <li>
+                                - Рядовой Иванов! Из какого материала сделан ствол?
+                            </li>
+                            <li>
+                                - Из стали, товарищ прапорщик!
+                            </li>
+                            <li>
+                                - Правильно! Рядовой Петров! Из какого материла сделан затвор?
+                            </li>
+                            <li>
+                                - Из стали, товарищ прапорщик!
+                            </li>
+                            <li>
+                                - Неправильно! Читаю инструкцию: "Затвор сделан из того 
+                                же материала, что и ствол".
+                            </li>
+                        </ul>     
+                    </div>    
+                    <label for="2to3">
+                        <span>
+                            <span class="loadingicon"></span>
+                            <span class="loadingtext">Показать ещё</span>
+                        </span>    
+                    </label>
+                </div>
+                <div class="third">
+                    <div class="contenthumor">
+                        <ul>
+                            <li>
+                                - Вы на кого учитесь?
+                            </li>
+                            <li>
+                                - Аааам… Эээээ… честно говоря я бакалавр
+                            </li>
+                        </ul>       
+                    </div>    
+                    <label for="3to4">
+                        <span>
+                            <span class="loadingicon"></span>
+                            <span class="loadingtext">Показать ещё</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="fourth">
+                    <div class="contenthumor">
+                        <ul>
+                            <li>
+                                Беру я, значит, все функции интегрируемые по Лебегу с квадратом. 
+                                Ввожу на них скалярное произведение, и тут, вы не поверите, товарищ 
+                                следователь, множество превращается в линейное нормированное пространство.
+                            </li>
+                        </ul>        
+                    </div>
+                    <label for="4to5">
+                        <span>
+                            <span class="loadingicon"></span>
+                            <span class="loadingtext">Показать ещё</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="fifth">
+                    <div class="contenthumor">
+                        <ul>
+                            <li>
+                                Летят по небу два крокодила - синий и красный, особенно красный
+                            </li>
+                        </ul>       
+                    </div>    
+                    <label for="5to1">
+                        <span>
+                            <span class="loadingicon"></span>
+                            <span class="loadingtext">Показать ещё</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="centercontent">
+            <div class="tv">
+                <div class="contenttype">
+                    <a href="http://bit.ly/2AXsukO">
+                        <span>Телепрограмма</span>
+                    </a></div>
+                <ul>
+                    <li>
+                        <div class="time">10:20</div>
+                        <div class="description">
+                            <a href="https://uvc.urfu.ru/ru/">
+                                Военная кафедра
+                            </a>    
+                        </div>
+                        <div class="channel">
+                            УВЦ    
+                        </div>   
+                    </li>
+                    <li>
+                        <div class="time">12:50</div>
+                        <div class="description">
+                            <a href="https://urfu.ru/ru/">
+                                Статистика (пр)
+                            </a>    
+                        </div>
+                        <div class="channel">
+                            Мат-Мех    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time">14:30</div>
+                        <div class="description">
+                            <a href="https://urfu.ru/ru/">
+                                ЛОИ (л)
+                            </a>    
+                        </div>
+                        <div class="channel">
+                            Мат-Мех    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time">16:10</div>
+                        <div class="description">
+                            <a href="https://urfu.ru/ru/">
+                                ЛОИ (пр)
+                            </a>    
+                        </div>
+                        <div class="channel">
+                            Мат-Мех    
+                        </div>
+                    </li>
+                    <li>
+                        <div class="time">18:00</div>
+                        <div class="description">
+                            <a href="https://urfu.ru/ru/">
+                                js
+                            </a>    
+                        </div>
+                        <div class="channel">
+                            Мат-Мех    
+                        </div>
+                    </li>
+                </ul>    
+            </div>
+            <div class="autonews">
+                <h2>Автомобильные новости</h2>
+                <div class="kek"></div>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="http://bit.ly/2j9YJGc">
+                                Лондон переведет автобусы на... кофе!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2jbgbdt">
+                                Лимузин для Путина: началось предсерийное производство
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2B7CxER">
+                                АИ-95 будет 55 руб. уже весной — пора запасаться!
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2hQfqdn">
+                                Самые беспроблемные подержанные автомобили — немецкий рейтинг
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2zYZmdW">
+                                Герой по жизни: Харрисон Форд спас женщину в ДТП
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2zmSBVS">
+                                335-сильный Seat Leon ST Cupra R может выйти в 2018 году
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2iyPD6A">
+                                Volvo поставит 24 000 XC90 с автопилотом компании Uber
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://bit.ly/2mLnDBf">
+                                У Lexus RX появилась новая версия Sport
+                            </a>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="kek"></div>
+            </div>
+        </div>
+        <div class="rightcontent">
+            <div class="weather">
+                <div class="forecastnow">
+                    <h2 class="weatherblock">
+                        <a href="http://bit.ly/2z3PwGi">
+                            <span>Погода</span>
+                        </a>
+                    </h2>
+                    <a href="http://bit.ly/2z3PwGi">
+                        <div class="currentimage"></div>
+                        <div class="currenttext">0 °C</div>
+                    </a>
+                </div> 
+                <a class="open" href="#weatherimage">
+                <span class="settingweather"></span></a>
+                <div class="image" id="weatherimage">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="weathersetting.jpg" alt="weather">
+                </div> 
+                <div class="overlay"></div>   
+                <div class="forecast">
+                    <a href="http://bit.ly/2z3PwGi">Ночь -50</a>, 
+                    <a href="http://bit.ly/2z3PwGi">День +50</a>
+                </div>
+            </div>
+            <div class="jam">
+                <div class="jamtype">
+                    <div class="servicetype">
+                        <a href="probki.yandex.ru">
+                            <span>Пробки</span>
+                        </a>    
+                    </div>
+                    <div class="light">
+                        <a href="probki.yandex.ru">
+                            <div class="trafficlight"></div>
+                        </a>    
+                    </div>
+                    <div class="score">
+                        <a href="probki.yandex.ru">
+                            over9000
+                        </a>
+                    </div>
+                </div>
+                <div class="jamdescription">
+                    <a href="probki.yandex.ru">
+                        Ад, следующее слово на Д
+                    </a>    
+                </div>
+                <a class="open" href="#jamimage">
+                <span class="settingweather"></span></a>
+                <div class="image" id="jamimage">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="jamsetting.jpg" alt="traffik-jam">
+                </div> 
+                <div class="overlay"></div>
+            </div>
+            <div class="travelling">
+                <div class="map">
+                    <div class="regionname">
+                        <a href="https://yandex.ru/maps/54/yekaterinburg">
+                            <span>Карта Екатеринбурга</span>
+                        </a>    
+                    </div>
+                    <div class="ownlocation">
+                        <a href="http://bit.ly/2B9qo22">
+                            <div class="locationlogo"></div>
+                        </a>
+                    </div>
+                </div>      
+            
+                <div class="transport">
+                    <div class="taxi">
+                        <a href="http://bit.ly/2izNx6j">
+                            Такси
+                        </a>
+                    </div>
+                    <div class="rasp">
+                        <a href="http://bit.ly/1Ayx6aF">
+                            Расписания
+                        </a>
+                    </div>
+                    <div class="bus">
+                        <a href="http://bit.ly/2hLFYfC">
+                            Междугородные автобусы
+                        </a>
+                    </div>
+                </div>    
+            </div>        
+            <div class="afisha">
+                <h3>
+                    <a href="http://bit.ly/2j7ZTCf">
+                        <span>Афиша</span>
+                    </a>
+                </h3>
+                <ul>
+                    <li>
+                        <div class="name">
+                            <a href="http://bit.ly/2zl9fWg">
+                                Детки напрокат
+                            </a>
+                        </div>
+                        <div class="description">премьера в чт</div>
+                    </li>
+                    <li>
+                        <div class="name">
+                            <a href="http://bit.ly/2mNIm7w">
+                                Тор: Рагнарёк
+                            </a>
+                        </div>
+                        <div class="description">фэнтези</div>
+                    </li>
+                    <li>
+                        <div class="name" title="Лига справедливости">
+                            <a href="http://bit.ly/2B5GEB8">
+                                Лига справедливости
+                            </a>
+                        </div>
+                        <div class="description">фантастика</div>
+                    </li>
+                    <li>
+                        <div class="name" title="Последний богатырь">
+                            <a href="http://bit.ly/2AWKDiD">
+                                Последний богатырь
+                            </a>
+                        </div>
+                        <div class="description">драма</div>
+                    </li>
+                    <li>
+                        <div class="name" title="Убийство в Восточном экспрессе">
+                            <a href="http://bit.ly/2iyMy6s">
+                                Убийство в Восточном экспрессе
+                            </a>
+                        </div>
+                        <div class="description">приключения</div>
+                    </li>
+                    <li>
+                        <div class="promoname">
+                            <a href="http://bit.ly/2jFhEg3">
+                                Концерты
+                            </a>
+                        </div>
+                        &nbsp;&mdash;&nbsp;
+                        <div class="promodescription">
+                            <a href="http://bit.ly/2zkUKSg">
+                                Hollywood Undead
+                            </a>
+                        </div>
+                    </li>
+                </ul>    
+            </div>
+        </div>    
+        <div class="rightside"></div>
+        <footer class="main-footer">The footer</footer>
+    </div>
 </body>
 </html>
