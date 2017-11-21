@@ -724,6 +724,11 @@ div[class='image']:target .open
 
 /* news стили */
 
+.datetime
+{
+    color: #999;
+}
+
 input[value='leftright']:checked ~ .wrapper .news .newsheader .newsekb
 {
     display: none;
