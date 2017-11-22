@@ -26,14 +26,6 @@ span
     color: #0054b9;
 }
 
-/* h3
-{
-    margin: 0;
-    font-size: 15px;
-    font-weight: normal;
-    color: #00E;
-} */
-
 ul
 {
     padding: 0;
@@ -79,16 +71,6 @@ a
 {
     grid-area: adv1;
 }
-
-/* .main-nav
-{
-    grid-area: links;
-} */
-/* 
-.search 
-{ 
-    grid-area: search; 
-} */
 
 .adv2
 {
@@ -155,53 +137,7 @@ a
     grid-area: footer;
 }
 
-.wrapper
-{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas: 'place'
-        'settings'
-        'mail'
-        'leftside'
-        'news'
-        'adv1'
-        'adv2'
-        /* 'search'
-        'links' */
-        'visited'
-        'humor'
-        'tv'
-        'autonews'
-        'weather'
-        'jam'
-        'map'
-        'transport'
-        'afisha'
-        'rightside'
-        'nav-search-slogan'
-        'footer';
-}
-
-/* @media (min-width: 500px)
-{
-    .wrapper 
-    {
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas: 
-            'header  header'
-            'nav     nav'
-            'sidebar content'
-            'ad      footer';
-    }
-
-    nav ul
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-} */
-
-@media (min-width: 700px)
+@media (min-width: 950px)
 {
     .wrapper
     {
@@ -301,6 +237,10 @@ input
     width: 81%;
     border-style: solid;
     border-color: #ffdb4d;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .searchfield
@@ -368,6 +308,24 @@ input
 {
     font-size: 13px;
     color: #000;
+}
+
+.jamtext,
+.settingjamblock
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.settingjamblock
+{
+    display: none;
+    margin-left: 15px;
+}
+
+.jam:hover .settingjamblock
+{
+    display: inline-block;
 }
 
 /* .tv стили */
@@ -536,8 +494,14 @@ input
     margin-bottom: 36px;
 }
 
-.weather:hover .forecastnow,
 .settingweather
+{
+    background: url('settings.svg');
+    width: 16px;
+    height: 16px;
+}
+
+.weather:hover .settingweatherblock
 {
     display: inline-block;
     vertical-align: top;
@@ -550,12 +514,16 @@ input
     width: 16px;
 }
 
-.settingweather
+.forecastnow,
+.settingweatherblock
 {
-    background: url('settings.svg');
-    width: 16px;
-    height: 16px;
-    margin-left: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.settingweatherblock
+{
+    display: none;
 }
 
 .image
@@ -697,6 +665,11 @@ div[class='image']:target .open
     height: 16px;
 }
 
+.stocks
+{
+    margin-bottom: 11px;
+}
+
 .stocks div
 {
     display: inline-block;
@@ -720,46 +693,6 @@ div[class='image']:target .open
 .blackgold
 {
     margin-right: 18px;
-}
-
-/* news стили */
-
-.datetime
-{
-    color: #999;
-}
-
-input[value='leftright']:checked ~ .wrapper .news .newsheader .newsekb
-{
-    display: none;
-}
-
-input[value='leftright']:checked ~ .wrapper .news .newsheader .newssmi
-{
-    display: block;
-}
-
-input[value='rightleft']:checked ~ .wrapper .news .newsheader .newssmi
-{
-    display: none;
-}
-
-input[value='rightleft']:checked ~ .wrapper .news .newsheader .newsekb
-{
-    display: block;
-}
-
-input[type='radio']
-{
-    display: none;
-}
-
-.newsekb,
-.datetime,
-.newssmi
-{
-    display: inline-block;
-    vertical-align: top;
 }
 
 /* .logo стили */
@@ -875,27 +808,50 @@ input[id='5to1']:checked ~ .first
     color: #f00;
 }
 
+.login
+{
+    margin-bottom: 22px;
+}
+
 .login,
 .lettercount
 {
     font-weight: bold;
+    color: #000;
 }
 
 .lettercount
 {
     display: inline-block;
+    font-size: 13px;
+}
+
+a .mail
+{
+    font-size: 13px;
+    color: #000;
+}
+
+a .mail:hover,
+.login:hover,
+a .lettercount:hover
+{
+    color: #f00;
 }
 
 .mailfield
 {
-    /* grid-area: mail; */
-    border: 1px solid black;
+    box-shadow: 0 0 1em #999;
+    padding: 12px 14px;
+    height: 60px;
+    width: 151px;
 }
 
 /* settingwindow */
 
 .settingwindow
 {
+    z-index: 3;
     position: absolute;
     height: 200px;
     width: 150px;
@@ -1006,4 +962,79 @@ input[id='afisha']:checked ~ .wrapper .rightcontent
 .settings label
 {
     cursor: pointer;
+}
+
+/* news стили */
+
+.datetime
+{
+    color: #999;
+    margin-left: 12px;
+}
+
+input[type='radio']
+{
+    display: none;
+}
+
+.newsekb,
+.datetime,
+.newssmi
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.news
+{
+    position: relative;
+    clear: both;
+    height: 175px;
+}
+
+.tab
+{
+    float: left;
+}
+
+.tab label
+{
+    background: #eee;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tab [type='radio']
+{
+    display: none;
+}
+
+.content
+{
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    height: 145px;
+}
+
+.stocks
+{
+    padding-top: 160px;
+    z-index: 2;
+}
+
+[type='radio']:checked ~ label
+{
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+
+[type='radio']:checked ~ label ~ .content
+{
+    z-index: 1;
 }

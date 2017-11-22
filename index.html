@@ -40,63 +40,65 @@
             </label>
         </div>
         <div class="mailfield">
-            <div class="login">login</div>
-            <div class="mail">
+            <div class="login">
+                <a href="https://mail.yandex.ru">login</a>
+            </div>
+            <a href="https://mail.yandex.ru">
+            <span class="mail">
                 Почта
                 <span class="lettercount">138</span>
-            </div>
+            </span>
+            </a>
         </div>
         <div class="leftside">
             <div class="logo"></div>    
         </div>
-        <div class="news">
-            <div class="newsheader">
-                <div class="newssmi">
-                    <label for="leftarrow2"><span class="fornews">Сейчас в СМИ</span></label>
-                    <ul>
-                        <li><a href="http://bit.ly/2zUOjCa">Дмитрий Медведев купил себе новый iPhone</a></li>
-                        <li><a href="https://support.apple.com/">Ошибка в iOS препятствует смене
-                            летнего времени на зимнее</a></li>
-                        <li><a href="http://bit.ly/1hJZ9t">Дмитрий Медведев отменил зимнее время</a></li>
-                        <li><a href="https://ura.news/news/1052237246">Пермь признана городом с самым
-                            высоким уровнем жизни для голубей</a></li>
-                        <li><a href="http://bit.ly/2mKjjSz">Дагестанские ученые открыли дверь</a></li>
-                    </ul>
+            <div class="news">
+                <div class="newsheader">
+                <div class="tab">
+                    <input type="radio" id="tab-1" name="tab-group-1" checked>
+                    <label for="tab-1">Сейчас в СМИ</label>
+            
+                    <div class="content">
+                        <ul>
+                            <li><a href="http://bit.ly/2zUOjCa">Дмитрий Медведев купил 
+                                себе новый iPhone</a></li>
+                            <li><a href="https://support.apple.com/">Ошибка в iOS 
+                                препятствует смене
+                                летнего времени на зимнее</a></li>
+                            <li><a href="http://bit.ly/1hJZ9t">Дмитрий Медведев 
+                                отменил зимнее время</a></li>
+                            <li><a href="https://ura.news/news/1052237246">Пермь - город с самым
+                                высоким уровнем жизни для голубей</a></li>
+                            <li><a href="http://bit.ly/2mKjjSz">Дагестанские ученые открыли дверь</a></li>
+                        </ul>
+                    </div> 
                 </div>
-                <div class="newsekb">
-                    <label for="rightarrow1"><span class="fornews">в Екатеринбурге</span></label>
-                    <ul>
-                        <li>
-                            <a href="http://bit.ly/2mKShuh">
-                                В Екатеринбурге на площади 1905 года могут перенести остановки
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://bit.ly/2zUGEpW">
-                                Свердловские эсеры получили нового руководителя — депутата и банкрота
-                            </a>    
-                        </li>
-                        <li>
-                            <a href="http://bit.ly/2j9t4ol">
-                                Свердловская область получит 16 миллиардов на ремонт дорог
-                            </a>    
-                        </li>    
-                        <li>
-                            <a href="http://bit.ly/2hHdPmi">
-                                Рабочую ситуацию вокруг ремонта проспекта Ленина «раздули до слона»
-                            </a>    
-                        </li>
-                        <li>
-                            <a href="http://bit.ly/2B9NAgL">
-                                На Среднем Урале утилизируют меньше половины образующихся отходов
-                            </a>    
-                        </li>    
-                    </ul>
+            
+                <div class="tab">
+                    <input type="radio" id="tab-2" name="tab-group-1">
+                    <label for="tab-2">в Екатеринбурге</label>
+        
+                    <div class="content">
+                        <ul>
+                            <li><a href="http://bit.ly/2mKShuh">В Екатеринбурге на площади 1905 
+                                года могут перенести остановки</a></li>
+                            <li><a href="http://bit.ly/2zUGEpW">Свердловские эсеры получили нового 
+                                руководителя — депутата и банкрота</a></li>
+                            <li><a href="http://bit.ly/2j9t4ol">Свердловская область получит 16
+                                миллиардов на ремонт дорог</a></li>    
+                            <li><a href="http://bit.ly/2hHdPmi">Рабочую ситуацию вокруг ремонта 
+                                проспекта Ленина «раздули до слона»</a></li>
+                        </ul>
+                        
+                    </div> 
                 </div>
                 <div class="datetime">
                     21 ноября, вторник 02:49
+                </div>  
+                
                 </div>
-            </div>
+            
             <div class="stocks">
                 <div class="usd" title="курс ЦБ РФ на 21/11">
                     <div class="stocksdescription">
@@ -126,7 +128,7 @@
                     </div>    
                 </div>
             </div>
-        </div>  
+        </div>
         <div class="adv1">
             <a href="https://amigo.mail.ru/">
                 <img src="browser.jpg" alt="Невыгодное предложение">
@@ -504,7 +506,10 @@
                     </a>
                 </div> 
                 <a class="open" href="#weatherimage">
-                <span class="settingweather"></span></a>
+                    <div class="settingweatherblock">
+                        <span class="settingweather"></span>
+                    </div>
+                </a>
                 <div class="image" id="weatherimage">
                     <div class="close"><a href="#">✕</a></div>
                     <img src="weathersetting.jpg" alt="weather">
@@ -516,33 +521,38 @@
                 </div>
             </div>
             <div class="jam">
-                <div class="jamtype">
-                    <div class="servicetype">
+                <div class="jamtext">
+                    <div class="jamtype">
+                        <div class="servicetype">
+                            <a href="probki.yandex.ru">
+                                <span>Пробки</span>
+                            </a>    
+                        </div>
+                        <div class="light">
+                            <a href="probki.yandex.ru">
+                                <div class="trafficlight"></div>
+                            </a>    
+                        </div>
+                        <div class="score">
+                            <a href="probki.yandex.ru">
+                                over9000
+                            </a>
+                        </div>
+                    </div>
+                    <div class="jamdescription">
                         <a href="probki.yandex.ru">
-                            <span>Пробки</span>
+                            Ад, следующее слово на Д
                         </a>    
                     </div>
-                    <div class="light">
-                        <a href="probki.yandex.ru">
-                            <div class="trafficlight"></div>
-                        </a>    
-                    </div>
-                    <div class="score">
-                        <a href="probki.yandex.ru">
-                            over9000
-                        </a>
-                    </div>
-                </div>
-                <div class="jamdescription">
-                    <a href="probki.yandex.ru">
-                        Ад, следующее слово на Д
-                    </a>    
                 </div>
                 <a class="open" href="#jamimage">
-                <span class="settingweather"></span></a>
+                    <div class="settingjamblock">
+                        <span class="settingweather"></span>
+                    </div>
+                </a>
                 <div class="image" id="jamimage">
                     <div class="close"><a href="#">✕</a></div>
-                    <img src="jamsetting.jpg" alt="traffik-jam">
+                    <img src="jamsettingmini.jpg" alt="traffik-jam">
                 </div> 
                 <div class="overlay"></div>
             </div>
