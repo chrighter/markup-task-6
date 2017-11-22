@@ -618,10 +618,15 @@ div[class='image']:target .open
     position: relative;
 }
 
+.autonews h2
+{
+    height: 50px;
+}
+
 .autonews .content::before
 {
     position: absolute;
-    top: 20px;
+    top: 45px;
     width: 100%;
     content: '';
     height: 30px;
@@ -633,7 +638,7 @@ div[class='image']:target .open
 .autonews .content::after
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -50px;
     width: 100%;
     content: '';
     height: 30px;
@@ -667,7 +672,7 @@ div[class='image']:target .open
 
 .stocks
 {
-    margin-bottom: 11px;
+    margin-bottom: 1000px;
 }
 
 .stocks div
@@ -989,7 +994,7 @@ input[type='radio']
 {
     position: relative;
     clear: both;
-    height: 175px;
+    height: 210px;
 }
 
 .tab
@@ -1010,20 +1015,20 @@ input[type='radio']
     display: none;
 }
 
-.content
+.newscontent
 {
     position: absolute;
-    top: 28px;
+    top: 40px;
     left: 0;
     background: white;
     right: 0;
     bottom: 0;
-    height: 145px;
+    height: 148px;
 }
 
 .stocks
 {
-    padding-top: 160px;
+    padding-top: 180px;
     z-index: 2;
 }
 
@@ -1034,7 +1039,7 @@ input[type='radio']
     z-index: 2;
 }
 
-[type='radio']:checked ~ label ~ .content
+[type='radio']:checked ~ label ~ .newscontent
 {
     z-index: 1;
 }
