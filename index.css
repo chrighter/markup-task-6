@@ -237,10 +237,18 @@ input
     width: 81%;
     border-style: solid;
     border-color: #ffdb4d;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+}
+
+input:focus,
+/* select:focus, */
+button:focus
+{
+    outline: none;
+}
+
+button
+{
+    cursor: pointer;
 }
 
 .searchfield
